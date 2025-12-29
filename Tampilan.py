@@ -25,7 +25,7 @@ while True:
     3. Kijang
 
         """)
-    pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
+        pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 2:
         print("""
@@ -38,6 +38,7 @@ while True:
     3. Kijang
 
         """)
+        pilihan2 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 3:
         print("""
@@ -50,6 +51,7 @@ while True:
     3. Kijang
 
        """)
+        pilihan3 = input("PILIH MODEL MOBIL DIATAS:")
 
-else:
-    print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
+    else:
+        print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
