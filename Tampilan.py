@@ -55,3 +55,6 @@ while True:
 
     else:
         print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
+
+
+# ini aja
