@@ -22,39 +22,9 @@ while True:
 
     1. Avanza
     2. Inova
-    3. Kijang
+    3. Kijang1
 
         """)
-        pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
-
-    elif p_user == 2:
-        print("""
-    ==============================
-      SILAHKAN PILIH MODEL MOBIL 
-    ==============================
-
-    1. Avanza
-    2. Inova
-    3. Kijang
-
-        """)
-        pilihan2 = input("PILIH MODEL MOBIL DIATAS:")
-
-    elif p_user == 3:
-        print("""
-    ==============================
-      SILAHKAN PILIH MODEL MOBIL 
-    ==============================
-
-    1. Avanza
-    2. Inova
-    3. Kijang
-
-       """)
-        pilihan3 = input("PILIH MODEL MOBIL DIATAS:")
-
-    else:
-        print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
-
-
-# ini aja
+        pilihan1 = int(input(("PILIH MODEL MOBIL DIATAS:")))
+        if pilihan1 == 1:
+            
