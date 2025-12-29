@@ -1,6 +1,6 @@
-db = []
+while True:
 
-print("""
+    print("""
             ==============================
                     SELAMAT DATANG
                 DI RENTAL MOBIL BAROKAH
@@ -10,7 +10,46 @@ print("""
         
          1. 4 SEAT    2. 6 SEAT     3. 8 SEAT 
 
+        """)
 
-""")
+    p_user = int(input("Masukan Pilihan Anda [1/2/3]:"))
 
+    if p_user == 1:
+        print("""
+    ==============================
+     SILAHKAN PILIH MODEL MOBIL 
+    ==============================
 
+    1. Avanza
+    2. Inova
+    3. Kijang
+
+        """)
+    pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
+
+    elif p_user == 2:
+        print("""
+    ==============================
+      SILAHKAN PILIH MODEL MOBIL 
+    ==============================
+
+    1. Avanza
+    2. Inova
+    3. Kijang
+
+        """)
+
+    elif p_user == 3:
+        print("""
+    ==============================
+      SILAHKAN PILIH MODEL MOBIL 
+    ==============================
+
+    1. Avanza
+    2. Inova
+    3. Kijang
+
+       """)
+
+else:
+    print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
