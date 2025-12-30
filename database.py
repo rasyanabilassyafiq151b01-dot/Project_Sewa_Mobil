@@ -18,28 +18,3 @@ db_three = {
     'Innova': {'seat': 6, 'price per day' : 450000},
     'Kijang': {'seat': 8, 'price per day' : 550000},
 }
-def get_database(choice):
-    if choice == 1:
-        return db_one
-    elif choice == 2:
-        return db_two
-    elif choice == 3:
-        return db_three
-    else:
-        return None
-def display_cars(database):
-    print("Available cars:")
-    for car, details in database.items():
-        print(f"{car}: {details['seat']} seats, Price per day: {details['price per day']}")
-def main():
-    while True:
-        try:
-            choice = int(input("Select database (1, 2, or 3): "))
-            database = get_database(choice)
-            if database is None:
-                print("Invalid choice. Please select 1, 2, or 3.")
-                continue
-            display_cars(database)
-            break
-        except ValueError:
-            print("Please enter a valid number.")
