@@ -30,9 +30,14 @@ while True:
 
     1. Avanza
     2. Inova
-    3. Kijang
+    3. Kijang1
 
         """)
+<<<<<<< HEAD
+        pilihan1 = int(input(("PILIH MODEL MOBIL DIATAS:")))
+        if pilihan1 == 1:
+            
+=======
         pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 2:

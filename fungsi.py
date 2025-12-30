@@ -10,7 +10,51 @@ daftar_harga = {
 keranjang = []
 total_belanja = 0
 
+<<<<<<< HEAD
+def main():
+    print("Selamat Datang di Sistem Rental Mobil")
+    
+    nama_pelanggan = input("Masukkan Nama Anda: ")
+    
+    while True:
+        tampilkan_mobil()
+        pilihan = input("\nPilih nomor mobil (atau ketik 'keluar'): ")
+        
+        if pilihan.lower() == 'keluar':
+            break
+            
+        try:
+            index = int(pilihan) - 1
+            nama_mobil = list(daftar_mobil.keys())[index]
+            harga_per_hari = daftar_mobil[nama_mobil][0]
+            
+            if daftar_mobil[nama_mobil][1] == "Disewa":
+                print("Maaf, mobil ini sedang tidak tersedia.")
+                continue
+                
+            hari = int(input(f"Berapa hari ingin menyewa {nama_mobil}? "))
+            total_biaya = harga_per_hari * hari
+            
+            # Update Status
+            daftar_mobil[nama_mobil][1] = "Disewa"
+            
+            # Cetak Struk Sederhana
+            print("\n" + "="*30)
+            print("      STRUK PENYEWAAN")
+            print("="*30)
+            print(f"Pelanggan : {nama_pelanggan}")
+            print(f"Mobil     : {nama_mobil}")
+            print(f"Durasi    : {hari} hari")
+            print(f"Total     : Rp {total_biaya:,}")
+            print("="*30)
+            print("Terima kasih telah menyewa!")
+            break
+            
+        except (ValueError, IndexError):
+            print("Input tidak valid, pilih nomor yang tertera.")
+=======
 print("===== Selamat Datang di Toko Sederhana =====")
+>>>>>>> 2412763b97f8cd7e841364c63ad6d1dbb3497e37
 
 # 3. Loop untuk input barang
 while True:
