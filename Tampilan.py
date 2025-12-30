@@ -33,7 +33,7 @@ while True:
     3. Kijang
 
         """)
-    pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
+        pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 2:
     print("""
@@ -46,6 +46,7 @@ while True:
     3. Kijang
 
         """)
+        pilihan2 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 3:
     print("""
@@ -54,10 +55,18 @@ while True:
     ==============================
 
     1. Avanza
-    2. Inova
+    2. Innova
     3. Kijang
 
        """)
+        pilihan3 = input("PILIH MODEL MOBIL DIATAS:")
 
-else:
-    print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
+    else:
+        print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
+
+<<<<<<< HEAD
+
+# ini aja kontol memwk
+=======
+#fungsi
+>>>>>>> 9093da68ded244ac5cac354affc0f91b554e575d
