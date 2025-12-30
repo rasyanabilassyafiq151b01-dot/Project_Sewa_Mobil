@@ -33,7 +33,7 @@ def main():
         print("2. Sewa Mobil")
         print("3. Kembalikan Mobil")
         print("4. Keluar")
-        pilihan = input("Pilih menu (1-5): ")
+        pilihan = input("Pilih menu (1-4): ")
         if pilihan == "1":
             tampilkan_mobil_tersedia()
         elif pilihan == "2":
