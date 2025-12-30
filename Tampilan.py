@@ -1,3 +1,11 @@
+
+print("""
+==============================
+        SELAMAT DATANG
+    DI RENTAL MOBIL BAROKAH
+==============================
+""")
+
 while True:
 
     print("""
@@ -33,7 +41,7 @@ while True:
         pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 2:
-        print("""
+    print("""
     ==============================
       SILAHKAN PILIH MODEL MOBIL 
     ==============================
@@ -46,13 +54,13 @@ while True:
         pilihan2 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 3:
-        print("""
+    print("""
     ==============================
       SILAHKAN PILIH MODEL MOBIL 
     ==============================
 
     1. Avanza
-    2. Inova
+    2. Innova
     3. Kijang
 
        """)
@@ -61,5 +69,9 @@ while True:
     else:
         print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
 
+<<<<<<< HEAD
+
+# ini aja kontol memwk
+=======
 #fungsi
 >>>>>>> 9093da68ded244ac5cac354affc0f91b554e575d
