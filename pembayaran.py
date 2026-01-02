@@ -29,3 +29,14 @@ def pembayaran():
     elif bayar == "tunai":    
         tunai = int(input("Masukan Nominal Pembayaran Sesuai dengan Struk Diatas"))
         
+        if uang < total:
+                print("Uang kurang")
+                print("Total:", total)
+        else:
+                kembalian = uang - total
+                print("Pembayaran berhasil")
+                print("Kembalian:", kembalian)
+                break
+
+    else:
+        print("Metode tidak tersedia")
