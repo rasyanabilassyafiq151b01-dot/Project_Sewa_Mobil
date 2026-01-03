@@ -1,10 +1,6 @@
-from dict import daftarmobil
+from data import daftarmobil
+from Tampilan import tampilkan_mobil_tersedia
 
-def tampilkan_mobil_tersedia():
-    print("Daftar Mobil Tersedia untuk Disewa:")
-    for mobil, info in daftarmobil.items():
-        if info["status"] == "tersedia":
-            print(f"{mobil} - Tahun: {info['tahun']}, Harga Sewa per Hari: Rp{info['harga_sewa_per_hari']}")
 def sewa_mobil(nama_mobil, hari):
     if nama_mobil in daftarmobil:
         if daftarmobil[nama_mobil]["status"] == "tersedia":
@@ -32,18 +28,24 @@ def main():
         print("1. Tampilkan Mobil Tersedia")
         print("2. Sewa Mobil")
         print("3. Kembalikan Mobil")
-        print("4. Keluar")
-        pilihan = input("Pilih menu (1-4): ")
-        if pilihan == "1":
+        print("4. Pembayaran")
+        print("5. Keluar")
+        pilihan = input("Pilih menu (1-5): ")
+        if pilihan == "1": 
             tampilkan_mobil_tersedia()
         elif pilihan == "2":
             nama_mobil = input("Masukkan nama mobil yang ingin disewa: ")
             hari = int(input("Masukkan jumlah hari sewa: "))
-            sewa_mobil(nama_mobil, hari)
+            total_harga = sewa_mobil(nama_mobil, hari)
+
         elif pilihan == "3":
             nama_mobil = input("Masukkan nama mobil yang ingin dikembalikan: ")
             kembalikan_mobil(nama_mobil)
+        
         elif pilihan == "4":
+            from pembayaran import pembayaran
+            pembayaran()
+        elif pilihan == "5":
             print("Terima kasih telah menggunakan layanan rental mobil kami.")
             break
         else:

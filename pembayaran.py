@@ -28,6 +28,8 @@ def pembayaran(sewa_mobil):
 
     elif bayar == "tunai":    
         tunai = int(input("Masukan Nominal Pembayaran Sesuai dengan Struk Diatas"))
+        total = sewa_mobil
+        uang = tunai
         
         if tunai < total:
                 print("Uang kurang")
@@ -36,7 +38,6 @@ def pembayaran(sewa_mobil):
                 kembalian = tunai - total
                 print("Pembayaran berhasil")
                 print("Kembalian:", kembalian)
-                break
 
     else:
         print("Metode tidak tersedia")
