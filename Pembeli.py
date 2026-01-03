@@ -12,6 +12,16 @@ def sewa_mobil(nama_mobil, hari):
             print(f"Maaf, {nama_mobil} sedang tidak tersedia untuk disewa.")
     else:
         print("Mobil tidak ditemukan dalam daftar.")
+def pembayaran(total_harga):
+        bayar=total_harga
+        print(f"Total harga yang harus dibayar: Rp{bayar}")
+        uang_bayar=int(input("Masukkan jumlah uang pembayaran: Rp"))
+        if uang_bayar>=bayar:
+            kembalian=uang_bayar-bayar
+            print(f"Pembayaran berhasil. Kembalian Anda: Rp{kembalian}")
+        else:
+            print("Maaf, uang Anda tidak cukup untuk membayar.")
+            
 def kembalikan_mobil(nama_mobil):
     if nama_mobil in daftarmobil:
         if daftarmobil[nama_mobil]["status"] == "disewa":
@@ -35,6 +45,7 @@ def main():
             tampilkan_mobil_tersedia()
         elif pilihan == "2":
             nama_mobil = input("Masukkan nama mobil yang ingin disewa: ")
+
             hari = int(input("Masukkan jumlah hari sewa: "))
             total_harga = sewa_mobil(nama_mobil, hari)
 

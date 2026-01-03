@@ -25,6 +25,7 @@ def pembayaran():
                 print("Nomor debit tidak valid")
                 print("Harus 16 karakter")
                 print("Silakan ulangi")
+                continue
 
     elif bayar == "tunai":    
         tunai = int(input("Masukan Nominal Pembayaran Sesuai dengan Struk Diatas"))
