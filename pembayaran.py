@@ -4,7 +4,7 @@ def pembayaran(total):
     print("2. Transfer")
     print("3. batal")
 
-    pilih = input("Pilih (1-4): ")
+    pilih = input("Pilih (1-3): ")
 
     if pilih == "1":
         cash = int(input("Masukan Jumlah Uang Anda:"))
