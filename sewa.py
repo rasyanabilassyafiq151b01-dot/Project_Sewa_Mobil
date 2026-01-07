@@ -4,11 +4,7 @@ from pembayaran import pembayaran
 def tampil_mobil():
     print("\nDAFTAR MOBIL")
     for kode, info in mobil.items():
-        status = "Tersedia" 
-        if info:
-            ['Tersedia'] 
-        else :
-            "Disewa"
+        status = "Tersedia" if info["tersedia"] else "Disewa"
         print(kode, info["nama"], "Rp", info["harga"], status)
 
 def sewa_mobil():
@@ -36,7 +32,7 @@ def sewa_mobil():
 def kembalikan_mobil():
     kode = input("Masukkan kode mobil: ").upper()
     if kode in mobil:
-        if mobil[kode] == True:
+        if mobil[kode]["tersedia"] == True:
             print("Mobil tidak sedang disewa")
         else:
             mobil[kode]["tersedia"] = True
