@@ -7,7 +7,6 @@ def tampil_mobil():
         status = "Tersedia" if info["tersedia"] else "Disewa"
         print(kode, info["nama"], "Rp", info["harga"], status)
 
-
 def sewa_mobil():
     kode = input("Masukkan kode mobil: ").upper()
 
@@ -31,10 +30,9 @@ def sewa_mobil():
         print("Kode mobil tidak ditemukan")
 
 def kembalikan_mobil():
-    kode = input("Masukkan kode mobil: ")
-
+    kode = input("Masukkan kode mobil: ").upper()
     if kode in mobil:
-        if mobil[kode]["tersedia"] == True:
+        if mobil[kode] == True:
             print("Mobil tidak sedang disewa")
         else:
             mobil[kode]["tersedia"] = True
