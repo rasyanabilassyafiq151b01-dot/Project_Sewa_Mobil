@@ -2,8 +2,7 @@ def pembayaran(total):
     print("\nMETODE PEMBAYARAN")
     print("1. Cash")
     print("2. Transfer")
-    print("3. E-Wallet")
-    print("4. Batal")
+    print("3. batal")
 
     pilih = input("Pilih (1-4): ")
 
@@ -17,6 +16,18 @@ def pembayaran(total):
         else:
             print ("Pembayaran Selesai")
         return True 
-    else:
-        print("Pembayaran Rp", total, "berhasil")
+    elif pilih == "2":
+        print("Silahkan Transfer ke Rekening 123-456-789 a.n rental mobil")
+        tf = input("Masukkan jumlah yang ditransfer: ")
+        if int(tf) < total:
+            print("Maaf Uang Tidak Cukup")
+            return False
+        else:
+            print("Pembayaran Selesai")
         return True
+    elif pilih == "3":
+        print("Pembayaran dibatalkan")
+        return False
+    else:
+        print("Pilihan tidak valid")
+        return False
