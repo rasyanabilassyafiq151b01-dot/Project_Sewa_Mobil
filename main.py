@@ -1,4 +1,4 @@
-from sewa import tampil_mobil, sewa_mobil, kembalikan_mobil
+from sewa import tampil_mobil, sewa_mobil, kembalikan_mobil, kembali_ke_menu
 
 
 while True:
@@ -12,12 +12,16 @@ while True:
 
     if menu == "1":
         tampil_mobil()
+        kembali_ke_menu()
     elif menu == "2":
         sewa_mobil()
+        kembali_ke_menu()
     elif menu == "3":
         kembalikan_mobil()
+        kembali_ke_menu()
     elif menu == "4":
         print("Terima kasih")
         break
     else:
         print("Menu tidak tersedia")
+        kembali_ke_menu()

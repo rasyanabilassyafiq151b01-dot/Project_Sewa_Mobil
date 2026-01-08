@@ -39,3 +39,7 @@ def kembalikan_mobil():
             print("Mobil berhasil dikembalikan")
     else:
         print("Kode mobil tidak ditemukan")
+
+def kembali_ke_menu() :
+    input("\nTekan Enter untuk kembali ke menu...")
+    return
