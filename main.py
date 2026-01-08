@@ -13,7 +13,6 @@ while True:
     if menu == "1":
         tampil_mobil()
     elif menu == "2":
-        tampil_mobil()
         sewa_mobil()
     elif menu == "3":
         kembalikan_mobil()
