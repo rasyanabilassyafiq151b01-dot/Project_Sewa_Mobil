@@ -11,6 +11,7 @@ def pembayaran(total):
         kembalian = cash - total
         if cash < total:
             print("Maaf Uang Tidak Cukup")
+            return False
         elif cash > total:
             print("Kembalian Dari Sewa Mobil Anda:", kembalian)
         else:
